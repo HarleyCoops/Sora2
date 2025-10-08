@@ -1,0 +1,267 @@
+{
+"scene_reference": {
+"setting": "Snowbound 1870s mountain outpost interior (haberdashery‑like cabin), mid‑day blizzard outside.",
+"note": "This is an homage micro‑sequence designed to evoke the film’s look without reproducing a specific shot or dialogue."
+},
+"technical_baseline": {
+"capture_format": {
+"medium": "65mm film emulation (5‑perf) with 1.25x anamorphic optics",
+"process_name": "Ultra Panavision 70",
+"aspect_ratio": "2.76:1",
+"frame_rate_fps": 24,
+"default_shutter_angle_deg": 180,
+"justification": "Ultra Panavision 70 with a projected 2.76:1 image is the hallmark format associated with the production.  "
+},
+"cameras_lenses": {
+"camera_body_emulation": "Panavision System 65 Studio / HS (spinning mirror reflex)",
+"prime_set_emulation": [
+"APO Panatar 35mm T2.8",
+"APO Panatar 40mm T2.8",
+"APO Panatar 50mm T2.8",
+"APO Panatar 75mm T2.8",
+"APO Panatar 100mm T2.8",
+"APO Panatar 135mm T3.0"
+],
+"lens_character": "Gentle focus roll‑off and ‘dappled, impressionistic’ depth cues from vintage Ultra Panavision optics; minimal diffusion in front of lens.  "
+},
+"stocks_color": {
+"primary_stock": "Kodak Vision3 500T 5219 (EI 500) for interiors",
+"additional_stocks_possible": [
+"Kodak Vision3 250D 5207",
+"Kodak Vision3 200T 5213",
+"Kodak Vision3 50D 5203"
+],
+"processing_note": "Interiors commonly ride at 500 ASA; modest push was sometimes used.  "
+},
+"environmental_fx": {
+"air_conditions": {
+"temperature_F": 30,
+"humidity_percent": 80,
+"reason": "Visible breath plumes; production famously chilled interiors to ~30°F with high humidity.  "
+},
+"atmosphere": "Light haze for volumetric shafts and lamp halation (do not obscure faces).",
+"exterior": "Continuous snow with gusts visible through windows; wind‑driven snow machines outside."
+},
+"sound_bed_guidance": [
+"Low, constant blizzard rumble; intermittent wood creaks; quiet stovepipe tick; distant horse jostle muffled."
+]
+},
+"set_layout": {
+"units": "meters (origin at center of main table)",
+"room_dimensions_wxdxh_m": [9.0, 7.0, 3.5],
+"key_features": {
+"front_door_N_wall": {"x": 0.0, "y": 3.2, "z": 0.0, "width_m": 1.1},
+"window_E_wall": {"x": 4.0, "y": 0.5, "z": 1.4, "size_m": [1.2, 0.9]},
+"stove_SW_corner": {"x": -3.8, "y": -2.8, "z": 0.0},
+"main_table_center": {"x": 0.0, "y": 0.0, "z": 0.75}
+},
+"cast_reference_positions": {
+"subject_A": {"desc": "Coat‑clad traveler with brimmed hat; seated left of table", "x": -0.6, "y": -0.2, "z": 0.75},
+"subject_B": {"desc": "Badge‑wearing figure; standing by post near window", "x": 1.4, "y": 0.6, "z": 0.0}
+}
+},
+"lighting_rig": {
+"color_policy": "Warm interior tungsten (key 3000–3200K) vs cold exterior daylight (5600K) for contrast.",
+"fixtures": [
+{
+"id": "KEY_R",
+"type": "2K tungsten Fresnel",
+"mods": "Through 4x4 1/2 grid + 50mm eggcrate",
+"CCT_K": 3200,
+"position_xyz_m": [1.1, -0.5, 2.4],
+"aim": "3/4 front onto Subject A",
+"exposure": "Base key at T2.8 1/48s EI500"
+},
+{
+"id": "FILL_L_BOUNCE",
+"type": "4x4 unbleached muslin bounce",
+"CCT_K": 3000,
+"position_xyz_m": [-1.2, -0.8, 1.0],
+"aim": "Soft up‑fill under hat brims",
+"level_vs_key_stops": -1.5
+},
+{
+"id": "BACK_RIM",
+"type": "1K Baby tungsten",
+"mods": "1/2 CTO + 40° flag",
+"position_xyz_m": [0.2, 0.9, 2.8],
+"aim": "Edge light on Subject B’s shoulder/hat",
+"level_vs_key_stops": -0.7
+},
+{
+"id": "TOP_BOX",
+"type": "6x6 toplight softbox (4x 1K tungstens)",
+"mods": "1/4 grid + eggcrate",
+"CCT_K": 3100,
+"position_xyz_m": [0.0, 0.0, 3.0],
+"aim": "General ambience motivated by rafters",
+"level_vs_key_stops": -2.0
+},
+{
+"id": "PRACTICALS",
+"type": "Oil lamps on table (practicals)",
+"CCT_K": 2800,
+"position_xyz_m": [-0.4, 0.1, 0.8],
+"aim": "Local warm pool; allow halation/flare"
+},
+{
+"id": "WINDOW_DAY",
+"type": "12K HMI outside",
+"mods": "12x12 216 diffusion + Full CTB + snow/rain bars + wind fan",
+"CCT_K": 5600,
+"position_xyz_m": [4.6, 0.5, 3.5],
+"aim": "Cold daylight through East window",
+"level_vs_key_stops": -2.0,
+"note": "Creates blue‑white back edge and visible snow gusts"
+},
+{
+"id": "NEG_FILL",
+"type": "4x4 black solids",
+"position_xyz_m": [-0.9, -0.1, 1.2],
+"aim": "Increase contrast on Subject A’s camera‑left cheek"
+}
+]
+},
+"timeline_seconds": [
+{
+"timecode": "00:00–00:01",
+"shot_id": "S1",
+"edit": "Start on wide interior",
+"camera": {
+"lens": "40mm 1.25x anamorphic",
+"aperture_T": 2.8,
+"focus_m": 3.0,
+"focus_pull": "none",
+"iso_ei": 500,
+"shutter_angle_deg": 180,
+"white_balance_K": 3200,
+"mount": "dolly low, 0.6 m lens height",
+"position_xyz_m": [-1.8, -1.4, 0.6],
+"move": "locked"
+},
+"framing": "Ultra‑wide two‑shot: Subject A left third at table, Subject B right third near window; door and stove as deep background anchors.",
+"lighting_changes": "Hold base plan; practical lamps at 80% to bloom slightly.",
+"texture_fx": "Light haze; breath plumes faint; snow visible through window.",
+"sound_cues": "Muffled wind bed; distant door rattle once."
+},
+{
+"timecode": "00:01–00:02",
+"shot_id": "S1",
+"edit": "Same shot",
+"camera": {
+"move": "begin 0.25 m dolly push‑in on table axis (0.25 m/s)",
+"focus_pull": "micro‑adjust to 2.8 m as parallax changes"
+},
+"framing": "Foreground coffee steam curls into top light; Subjects’ hat brims touch top frame line for tension.",
+"lighting_changes": "Nudge KEY_R dimmer +0.1 stop to keep faces at T2.8 as camera advances.",
+"texture_fx": "Steam and breath intermingle; a spark pops in stove (subtle light kick)."
+},
+{
+"timecode": "00:02–00:03",
+"shot_id": "S1",
+"camera": {
+"move": "continue push‑in 0.25 m",
+"position_xyz_m": [-1.55, -1.2, 0.6],
+"focus_pull": "to 2.6 m (Subjects mid‑ground)"
+},
+"framing": "Window brightens with a gust; elongated anamorphic bokeh in background.",
+"lighting_changes": "WINDOW_DAY gust raises level +0.3 stop for one second (fan burst).",
+"texture_fx": "Breath plume from Subject B crosses frame right‑to‑left."
+},
+{
+"timecode": "00:03–00:04",
+"shot_id": "S1",
+"camera": {
+"move": "finalize push‑in (total 0.75 m since start); slight 0.5° tilt up to catch eyes under brims",
+"focus_pull": "to 2.4 m"
+},
+"framing": "Tension beat: Subjects hold eye‑line offscreen; lamp halation kisses lens.",
+"lighting_changes": "Introduce -0.2 stop on TOP_BOX to deepen hat shadows; maintain FILL_L_BOUNCE at -1.5 stops."
+},
+{
+"timecode": "00:04–00:05",
+"shot_id": "S1",
+"camera": {
+"move": "feather to a stop",
+"focus_pull": "rack 2.4 m → 3.4 m to window post (Subject B) over 0.6 s"
+},
+"framing": "Momentary emphasis on Subject B silhouette and snow vortices.",
+"lighting_changes": "BACK_RIM edges B’s hat; allow slight flare streak."
+},
+{
+"timecode": "00:05–00:06",
+"shot_id": "S2",
+"edit": "CUT to medium close‑up on Subject A",
+"camera": {
+"lens": "75mm 1.25x anamorphic",
+"aperture_T": 2.8,
+"focus_m": 1.2,
+"iso_ei": 500,
+"white_balance_K": 3200,
+"shutter_angle_deg": 180,
+"mount": "hi‑hat on table edge",
+"position_xyz_m": [-0.9, -0.35, 0.8],
+"move": "locked"
+},
+"framing": "MCU from chest up; nose at left third; empty space to the right carries offscreen threat.",
+"lighting_changes": "KEY_R flags tightened (add 4\" cutter) to sharpen cheek falloff; practical lamp glows in bokeh.",
+"texture_fx": "Breath condenses; micro‑beads on moustache; coffee steam rises between lens and subject."
+},
+{
+"timecode": "00:06–00:07",
+"shot_id": "S2",
+"camera": {
+"move": "1 cm creep forward for tension",
+"focus_pull": "subtle 1.2 m → 1.15 m to catch eye sparkle"
+},
+"framing": "Eye highlight from FILL_L_BOUNCE; brim shadow just kisses brow.",
+"lighting_changes": "Dim PRACTICALS −5% to settle flare; increase NEG_FILL proximity by 10 cm to deepen contrast."
+},
+{
+"timecode": "00:07–00:08",
+"shot_id": "S2",
+"camera": {
+"move": "hold",
+"focus_pull": "none"
+},
+"framing": "Stillness; breath plume exits frame as wind thuds against door offscreen.",
+"lighting_changes": "WINDOW_DAY drops back to base; TOP_BOX pulses +0.1 stop (stove tick) for a naturalistic shimmer.",
+"sound_cues": "One wood‑beam groan; blizzard rumble rises 1 dB and settles."
+}
+],
+"wardrobe_props": {
+"subject_A": {
+"wardrobe": "Dark wool coat with fur collar; black felt hat; leather gloves; scarf frost at edges.",
+"props": "Tin coffee cup; oil lamp at elbow; revolver holster stays holstered."
+},
+"subject_B": {
+"wardrobe": "Heavy duster; sheriff’s star; scarf; snowflake flecks on shoulder from recent entry.",
+"props": "Gloved hand on post; breath visible when turning toward window."
+}
+},
+"post_pipeline": {
+"scan_emulation": "Grain: fine 65mm pattern (luma 20%, chroma 12%); gate weave 0.1px random; tiny dust motes occasionally glint in top light.",
+"color_pipeline": {
+"print_emulation_LUT": "2383‑style print curve over 5219 base",
+"contrast": "medium‑high; protect lamp highlights; cyan‑leaning shadows from window light",
+"white_point": "D65",
+"deliver_format": "DCI‑P3 4096x1482 (2.76:1)"
+},
+"audio_mix": "Blizzard -22 LUFS integrated; room tone creaks -28 LUFS; cup set‑down -26 LUFS; no score, or single held bass note -30 LUFS."
+},
+"direction_notes": [
+"Maintain long‑take tension even across the cut by matching head position and breath rhythm.",
+"Keep faces readable under hat brims via low, warm fill while preserving strong top‑shadow character.",
+"Let practical‑lamp halation and vintage‑lens aberrations provide organic softness; avoid modern diffusion."
+],
+"safety_and_attribution": [
+"Format, aspect ratio, lens family, and stock references reflect public reporting about the production’s use of Ultra Panavision 70 on 65mm with specific Kodak Vision3 stocks.  ",
+"Interior climate details (≈30°F, 80% humidity) are drawn from American Cinematographer’s set coverage.  ",
+"Interiors operating around 500 ASA and the general 70mm ‘roadshow’ context are documented in trade coverage.  "
+],
+"sources": [
+"American Cinematographer – “Wide Wide West: The Hateful Eight” (format, stocks, set climate, lens characteristics).  ",
+"Wired – on the 70mm roadshow engagement and Ultra Panavision 70 (context, aspect ratio).  ",
+"Variety – Robert Richardson comments on interior stock speed (500 ASA).  "
+]
+}
